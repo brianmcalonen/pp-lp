@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://static.personandpartnersleads.com/landing-pages/dist/assets/css/styles.min.css?cache=1">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body,
+        div,
+        img {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        body {
+            line-height: 1;
+            background-color: #111;
+        }
+
+        .flexContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            background: #111 no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            z-index: 1;
+            min-width: 400px;
+            min-height: 1000px;
+        }
+
+        .leftColumn {
+            background: url("https://image-placeholder.com/images/actual-size/1024x600.png") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            max-width: none;
+            width: 100%;
+            height: 500px;
+        }
+
+        .formContainer {
+            width: 350px;
+            flex-shrink: 0;
+            margin: 0 40px;
+        }
+
+        .formInput {
+            color: #ffffff;
+            width: 100%;
+            padding: 2px 0px 4px;
+            margin: 0px 0px 40px;
+            border: none;
+            border-bottom: 3px solid rgb(255, 255, 255);
+            background: transparent;
+            font-family: "Gotham Bold", system, sans-serif;
+            font-size: 16px;
+            letter-spacing: 3px;
+        }
+
+        .formTitle {
+            color: #ffffff;
+            font-family: "Gotham Bold", system, sans-serif;
+            font-size: 24px;
+            letter-spacing: 5px;
+            line-height: 40px;
+            margin-bottom: 40px;
+            text-shadow: 0 0 8px hsl(0deg 0% 100% / 33%);
+        }
+
+        .formSubmit {
+            background-color: transparent;
+            border: 3px solid white;
+            color: #ffffff;
+            font-family: "Gotham Bold", system, sans-serif;
+            font-size: 16px;
+            letter-spacing: 3px;
+            margin-top: 40px;
+            padding: 10px 0px;
+            width: 100%;
+        }
+
+        /* Laptop Size */
+        @media (max-width: 1200px) {
+
+            .leftColumn {
+                background: url("https://image-placeholder.com/images/actual-size/720x486.png") no-repeat scroll center center;
+            }
+        }
+
+        /* Tablet Size */
+        @media (max-width: 960px) {
+            .flexContainer {
+                flex-direction: column;
+            }
+
+            .leftColumn {
+                background: url("https://image-placeholder.com/images/actual-size/960x640.png") no-repeat scroll center center;
+            }
+
+            .formContainer {
+                padding: 40px 0 80px;
+            }
+        }
+
+        /* Phone Size */
+        @media (max-width: 450px) {
+            .flexContainer {
+                min-width: 425px;
+                min-height: 100vh;
+            }
+
+            .leftColumn {
+                background: url("https://image-placeholder.com/images/actual-size/450x300.png") no-repeat scroll center center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Landing Page -->
+
+    <div class="flexContainer">
+
+        <div class="leftColumn">
+            <!-- <div class="imgContainer">
+                <img src="./hero.jpg" alt="">
+            </div> -->
+        </div>
+
+        <div class="rightColumn">
+            <!--Desktop Form - BEGIN-->
+            <div id="desktopform" class="formContainer">
+                <h3 class="formTitle">PREORDER CYBERTRUCK</h3>
+                <div class="">
+                    <form id="form-2" action="//www.personandpartnersleads.com/lead" method="post" target="_top">
+                        <input type="hidden" name="source" value="Adwords">
+                        <input type="hidden" name="host" value="">
+                        <input type="hidden" name="url" value="">
+                        <input type="hidden" name="confirm" value="">
+                        <input type="hidden" name="lead.offer.type" value="">
+                        <input type="hidden" name="lead.vehicle.title" value="">
+                        <input type="hidden" name="lead.vehicle.make" value="">
+                        <input type="hidden" name="lead.vehicle.model" value="">
+                        <input type="hidden" name="lead.vehicle.year" value="">
+                        <input type="hidden" name="lead.vehicle.down" value="">
+                        <input type="hidden" name="lead.vehicle.payment" value="">
+                        <input type="hidden" name="lead.vehicle.price" value="">
+                        <input type="hidden" name="lead.vehicle.offer" value="">
+                        <input type="hidden" name="lead.vehicle.interest" value="">
+                        <input type="hidden" name="lead.vehicle.status" value="">
+                        <input type="hidden" name="lead.customer.comments" value="">
+                        <div class="">
+                            <input type="text" class="formInput" name="lead.customer.name" placeholder="ENTER NAME"
+                                required>
+                            <!-- <div class="invalid-feedback">Name is required...</div> -->
+                        </div>
+                        <div class="">
+                            <input type="email" class="formInput" name="lead.customer.email" placeholder="ENTER EMAIL"
+                                required>
+                            <!-- <div class="invalid-feedback">Valid email address is required..</div> -->
+                        </div>
+                        <div class="">
+                            <input type="tel" class="formInput" name="lead.customer.phone" placeholder="XXX-XXX-XXXX"
+                                pattern="\(?[2-9]\d{2}[)-.]?[\s]?\d{3}[ -.]?\d{4}" required>
+                            <!-- <div class="invalid-feedback">10 digit phone number is required...</div> -->
+                        </div>
+                        <!-- onclick="$('#form-1').submit();" -->
+                        <button type="submit" class="formSubmit">CLAIM OFFER</button>
+                    </form>
+                </div>
+            </div>
+            <!--Desktop Form - END-->
+        </div>
+    </div>
+
+
+</body>
+
+</html>
