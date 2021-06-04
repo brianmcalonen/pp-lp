@@ -49,7 +49,7 @@
         }
 
         .leftColumn {
-            background: url("1024x600.jpg") no-repeat center center;
+            background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-1024x600.jpg) no-repeat center center;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -57,6 +57,8 @@
             max-width: none;
             width: 1200px;
             height: 600px;
+            display: flex;
+            justify-content: center;
         }
 
         .formContainer {
@@ -100,22 +102,22 @@
             width: 100%;
         }
 
-        /* Laptop Size */
+        /* Desktop Size */
         @media (max-width: 1400px) {
 
             .leftColumn {
-                background: url("720x486.jpg") no-repeat scroll center center;
+                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-720x486.jpg) no-repeat scroll center center;
             }
         }
 
-        /* Tablet Size */
-        @media (max-width: 960px) {
+        /* Laptop Size */
+        @media (max-width: 1115px) {
             .flexContainer {
                 flex-direction: column;
             }
 
             .leftColumn {
-                background: url("720x486.jpg") no-repeat scroll center center;
+                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-720x486.jpg) no-repeat scroll center center;
             }
 
             .formContainer {
@@ -123,17 +125,53 @@
             }
         }
 
-        /* Phone Size */
-        @media (max-width: 450px) {
+        /* Tablet Size */
+        @media (max-width: 950px) {
             .flexContainer {
-                min-width: 425px;
-                min-height: 100vh;
+                flex-direction: column;
             }
 
             .leftColumn {
-                background: url("640x640.jpg") no-repeat scroll center center;
+                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-640x640.jpg) no-repeat scroll center center;
             }
 
+            .formContainer {
+                padding: 40px 0 80px;
+            }
+        }
+
+        /* Large Phone Size */
+        @media (max-width: 650px) {
+            .flexContainer {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100vw;
+
+            }
+
+            .leftColumn {
+                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-500x350.jpg) no-repeat scroll center center;
+            }
+
+            .formContainer {
+                padding: 40px 0 80px;
+            }
+        }
+
+        /* Small Phone Size */
+        @media (max-width: 500px) {
+            .flexContainer {
+                /* max-width: 500px; */
+            }
+
+            .leftColumn {
+                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-500x350.jpg) no-repeat scroll center center;
+            }
+
+            .formContainer {
+                padding-bottom: 40px;
+            }
         }
     </style>
 </head>
@@ -143,19 +181,16 @@
 
     <div class="flexContainer">
 
-        <div class="leftColumn">
-            <!-- <div class="imgContainer">
-                <img src="./hero.jpg" alt="">
-            </div> -->
-        </div>
+        <div class="leftColumn"></div>
 
         <div class="rightColumn">
             <!--Desktop Form - BEGIN-->
             <div id="desktopform" class="formContainer">
                 <h3 class="formTitle">
-                    PreOrder Any New Ford 
-                    <br/>
-                    &amp; Only Pay Invoice price! </h3>
+                    PreOrder Any New Ford
+                    <br />
+                    &amp; Only Pay Invoice price!
+                </h3>
                 <div class="">
                     <form id="form-2" action="//www.personandpartnersleads.com/lead" method="post" target="_top">
                         <input type="hidden" name="source" value="Adwords">
