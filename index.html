@@ -9,7 +9,7 @@
         href="https://static.personandpartnersleads.com/landing-pages/dist/assets/css/styles.min.css?cache=1">
     <title>Document</title>
     <style>
-        * {
+        /* * {
             box-sizing: border-box;
         }
 
@@ -23,7 +23,7 @@
             font-size: 100%;
             font: inherit;
             vertical-align: baseline;
-        }
+        } */
 
         body {
             line-height: 1;
@@ -41,11 +41,8 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            height: 100vh;
             width: 100%;
-            z-index: 1;
-            min-width: 400px;
-            min-height: 1000px;
+
         }
 
         .leftColumn {
@@ -59,6 +56,8 @@
             height: 600px;
             display: flex;
             justify-content: center;
+            align-self: center;
+
         }
 
         .formContainer {
@@ -132,7 +131,7 @@
             }
 
             .leftColumn {
-                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-640x640.jpg) no-repeat scroll center center;
+                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-720x486.jpg) no-repeat scroll center center;
             }
 
             .formContainer {
@@ -146,27 +145,35 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: 100vw;
-
             }
 
             .leftColumn {
                 background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-500x350.jpg) no-repeat scroll center center;
+                /* padding: 0px 100px !important; */
             }
 
             .formContainer {
                 padding: 40px 0 80px;
+            }
+
+            .formInput {
+            padding: 2px 0px 4px;
+                margin: 0px 0px 40px;
+                border: none;
+                border-bottom: 2px solid rgb(255, 255, 255);
+                font-size: 14px;
+                letter-spacing: 2px;
             }
         }
 
         /* Small Phone Size */
         @media (max-width: 500px) {
             .flexContainer {
-                /* max-width: 500px; */
+                max-width: 500px;
             }
 
             .leftColumn {
-                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-500x350.jpg) no-repeat scroll center center;
+                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/320x568.jpg) no-repeat scroll center center;
             }
 
             .formContainer {
