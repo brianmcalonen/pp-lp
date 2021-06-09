@@ -102,21 +102,17 @@
         }
 
         /* Desktop Size */
-        @media (max-width: 1400px) {
+        @media only screen and (max-width: 1400px) {
 
             .leftColumn {
-                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-720x486.jpg) no-repeat scroll center center;
+                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-720x486.jpg) no-repeat center center;
             }
         }
 
         /* Laptop Size */
-        @media (max-width: 1115px) {
+        @media only screen and (max-width: 1115px) {
             .flexContainer {
                 flex-direction: column;
-            }
-
-            .leftColumn {
-                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-720x486.jpg) no-repeat scroll center center;
             }
 
             .formContainer {
@@ -125,40 +121,29 @@
         }
 
         /* Tablet Size */
-        @media (max-width: 950px) {
+        @media only screen and (max-width: 950px) {
             .flexContainer {
                 flex-direction: column;
             }
 
             .leftColumn {
-                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-720x486.jpg) no-repeat scroll center center;
+                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-500x350.jpg) no-repeat center center;
+                flex-grow: 1;
+                width: 100%;
             }
 
-            .formContainer {
-                padding: 40px 0 80px;
-            }
-        }
-
-        /* Large Phone Size */
-        @media (max-width: 650px) {
-            .flexContainer {
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+            .rightColumn {
+                overflow: hidden;
             }
 
-            .leftColumn {
-                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-500x350.jpg) no-repeat scroll center center;
-                /* padding: 0px 100px !important; */
-            }
-
-            .formContainer {
-                padding: 40px 0 80px;
+            #desktopform {
+                width: 100%;
+                margin-left: 0px;
             }
 
             .formInput {
-            padding: 2px 0px 4px;
-                margin: 0px 0px 40px;
+                padding: 2px 0px 4px 0px;
+                margin: 0px 0px 40px 0px;
                 border: none;
                 border-bottom: 2px solid rgb(255, 255, 255);
                 font-size: 14px;
@@ -166,18 +151,43 @@
             }
         }
 
-        /* Small Phone Size */
-        @media (max-width: 500px) {
+        /* Large Phone Size */
+        @media only screen and (max-width: 650px) {
             .flexContainer {
-                max-width: 500px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
 
             .leftColumn {
-                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/320x568.jpg) no-repeat scroll center center;
+                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/Ford-LandingPage-DarkGraphic-500x350.jpg) no-repeat center center;
+            }
+
+
+        }
+
+        /* Small Phone Size */
+        @media only screen and (max-width: 500px) {
+            .leftColumn {
+                background: url(https://static.personandpartnersleads.com/landing-pages/dist/cfd/email/img/320x568.jpg) no-repeat center center;
             }
 
             .formContainer {
-                padding-bottom: 40px;
+                padding: 0px 5px 40px 5px;
+            }
+
+            .formInput {
+                width: 90%;
+                line-height: 50px;
+            }
+
+            .formTitle {
+                font-size: 20px;
+                overflow-wrap: break-word;
+            }
+
+            .formSubmit {
+                width: 90%;
             }
         }
     </style>
