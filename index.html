@@ -32,7 +32,7 @@
 
         .flexContainer {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
 
 
@@ -52,12 +52,11 @@
             -o-background-size: cover;
             background-size: cover;
             max-width: none;
-            width: 1200px;
+            width: 1024px;
             height: 600px;
             display: flex;
             justify-content: center;
             align-self: center;
-
         }
 
         .formContainer {
@@ -87,6 +86,7 @@
             line-height: 40px;
             margin-bottom: 40px;
             text-shadow: 0 0 8px hsl(0deg 0% 100% / 33%);
+            text-align: center;
         }
 
         .formSubmit {
@@ -146,7 +146,7 @@
                 margin: 0px 0px 40px 0px;
                 border: none;
                 border-bottom: 2px solid rgb(255, 255, 255);
-                font-size: 14px;
+                font-size: 18px;
                 letter-spacing: 2px;
             }
         }
@@ -174,11 +174,15 @@
 
             .formContainer {
                 padding: 0px 5px 40px 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
 
             .formInput {
-                width: 90%;
                 line-height: 50px;
+                padding: 0 20px;
             }
 
             .formTitle {
@@ -187,7 +191,7 @@
             }
 
             .formSubmit {
-                width: 90%;
+                padding: 20px 60px;
             }
         }
     </style>
@@ -204,10 +208,9 @@
             <!--Desktop Form - BEGIN-->
             <div id="desktopform" class="formContainer">
                 <h3 class="formTitle">
-                    PreOrder Any New Ford
-                    <br />
-                    &amp; Only Pay Invoice price!
-                </h3>
+                    Place Your Pre-Order by July 6th,
+                    and Receive $1,000 in Pre-Order
+                    Assistance.</h3>
                 <div class="">
                     <form id="form-2" action="//www.personandpartnersleads.com/lead" method="post" target="_top">
                         <input type="hidden" name="source" value="Adwords">
